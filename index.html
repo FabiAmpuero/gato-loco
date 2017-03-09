@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App</title>
+    <link rel="icon" type="image/ico" href="image/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Crafty+Girls|Life+Savers|Rouge+Script|Stalemate" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body onload="init()">
+<!-- --------------------------------------- LINKS HOME -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="historial.html">Historial</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- ---------------------------------- SECCION INICIO -->
+    <section class="inicio">
+        <h1 class="text-center">Bienvenido a Gato Loco!</h1>
+        <div class="text-center"><p class="text-center boton" id="iniciar">Iniciar Juego</p></div>
+    </section>
+<!-- --------------------------------- SECCION JUGADOR -->
+    <section class="jugador" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8">
+                    <h2>Ingrese el nombre del jugador 1</h2>
+                    <h2>Ingrese el nombre del jugador 2</h2>
+                </div>
+                <div class="col-xs-4">
+                    <input type="text" onkeyup="validationName(event)" id="inputOne"><br>
+                    <input type="text" onkeyup="validationName(event)" id="inputTwo">
+                </div>
+            </div>
+        </div>
+        <div class="text-center"><p class="text-center boton" id="comenzar">Comenzar</p></div>
+    </section>
+    <!-- ------------------------------------ SECCION JUEGO -->
+    <section class="game" style="display: none;">
+        <h2 class="text-center" id="turno"></h2>
+        
+    </section>
+<!-- ---------------------------------- ENALCES SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
