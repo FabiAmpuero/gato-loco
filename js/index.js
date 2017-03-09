@@ -17,9 +17,14 @@ function initGame() {
     }
     // numero random
     var numRandom = Math.floor((Math.random() * 10) + 1);
-    
+    $("#celda1").click(celda1);
 }
 
+function celda1() {
+    console.log("primer movimiento");
+    $("#celda1").html("x");
+    $("#turno").html("Turno de "+$("#inputTwo").val());
+}
 
 /* VALIDAR MAYUSCULA */
 function validationName() {
