@@ -76,7 +76,9 @@ ul a {
 }
 .game td {
     outline: 1px solid #000;
-    padding: 35px;
+    padding: 25px 45px;
+    height: 131px;
+    width: 110px;
 }
 
 

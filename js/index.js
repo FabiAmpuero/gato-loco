@@ -17,13 +17,26 @@ function initGame() {
     }
     // numero random
     var numRandom = Math.floor((Math.random() * 10) + 1);
-    $("#celda1").click(celda1);
+    
+    
+    
+    $("td").each(function(){$(this).click(celda1)});
+    //$("#celda1").click(celda1);
 }
 
 function celda1() {
-    console.log("primer movimiento");
-    $("#celda1").html("x");
-    $("#turno").html("Turno de "+$("#inputTwo").val());
+    console.log($(this).text());
+    if($(this).text("")){
+        $(this).html("x");
+        $("#turno").html("Turno de "+$("#inputTwo").val());
+    }else{
+        if($(this).text("x")){
+            alert("Este espacio ya esta ocupado!");
+        }    
+    }
+    
+    //$("#celda1").html("x");
+    //$("#turno").html("Turno de "+$("#inputTwo").val());
 }
 
 /* VALIDAR MAYUSCULA */
